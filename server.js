@@ -7,5 +7,5 @@ const router = require("./news_api/service");
 app.use(cors());
 app.use("", router);
 
-const port = 8089;
+const port = process.env.PORT;
 app.listen(port, () => console.log(`Listening on port: ${port}`));
